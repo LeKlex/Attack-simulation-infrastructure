@@ -6,7 +6,7 @@
 #################################################
 
 
-echo "\e[91mAre you sure you want to destroy all VM-boyes? (y/n)\e[0m"
+echo "\e[91mAre you sure you want to destroy all VMs? (y/n)\e[0m"
 read -p "" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
