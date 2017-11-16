@@ -104,7 +104,7 @@ sudo apt-get install netcat -y
 # Select traditional version (not BSD)
 sudo su -c 'echo "2" | sudo update-alternatives --config nc'
 
-# Start listening on port / will be closed after nmap scan -> loop to keep it open
+# Start listening on port 1234 / will be closed after nmap scan -> loop to keep it open
 #screen -dmS receive_nc_file bash -c 'while :; sleep 20; do sudo nc -l -p 1234 > /vagrant_data/upload/badcode.tgz; done; exec bash'
 screen -dmS receive_nc_file bash -c 'while [[ (! -s /vagrant_data/upload/badcode.tgz) || (! -f /vagrant_data/upload/badcode.tgz) ]]; do sudo nc -l -p 1234 > /vagrant_data/upload/badcode.tgz; done;'
 
