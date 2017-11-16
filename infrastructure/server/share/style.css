@@ -1,0 +1,122 @@
+/* classes with possible use on several places */
+.error
+{
+	color: red;
+	font-weight: bold;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.label
+{
+	font-weight: bold;
+}
+
+/* table with the persons */
+#personsTab
+{
+	padding: 0.5em;
+	border-collapse: collapse;
+	width: 100%;
+	color: white;
+	border: 1px dotted greenyellow;
+}
+
+#personsTab td
+{
+	padding: 0.2em;
+	/*border: 1px solid #cccccc;*/
+	border: 1px solid greenyellow;
+}
+
+#personsTab th
+{
+	background-color: #424242;/*#cfe7b3;*/
+	/*border: 1px solid #cccccc;*/
+	border: 1px solid greenyellow;
+	color: greenyellow;
+}
+
+#personsTab tr.odd
+{
+	background-color: #2E2E2E;/*#ffffff;*/
+}
+
+#personsTab tr.even
+{
+	background-color: #424242;/*#f0f9e4;*/
+}
+
+tr.personsLabels
+{
+	font-size: 0.85em;
+}
+
+tr.personsBody
+{
+	font-size: 0.85em;
+}
+
+/* layout of filter and logout form */
+div#filter
+{
+	float:left;
+	margin-right: 100px;
+}
+
+div#logout
+{
+	text-align: right;
+	margin-right: 30px;
+	margin-top: -15px;
+
+}
+
+/* laoyut of login form */
+#login label
+{
+	display: inline-block;
+	width: 10em;
+}
+
+/* Make it special nooby */
+body
+{
+	background-color: lightblue;
+	color: black;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+input[type=submit]{
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+	background-color: gray;
+	color: lightblue;
+	border: 1px solid black;
+
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	color: greenyellow;
+}
+
+
+#pagecenter {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}

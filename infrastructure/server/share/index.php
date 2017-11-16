@@ -50,7 +50,7 @@ if ($logged_in) {
                 Scions Verlag
             </h1>
             <br/>
-            <div style="text-align: justify">Welcome to [SomeCompanyNameThatDoesntExist]]<br><br><b>The #1 choice of IT-Security!</b></div>
+            <div style="text-align: justify">Welcome to [SomeCompanyNameThatDoesntExist]<br><br><b>The #1 choice of IT-Security!</b></div>
             <br/><br/><br/><br/>
 
             <form method="POST" action="index.php" id="login">
