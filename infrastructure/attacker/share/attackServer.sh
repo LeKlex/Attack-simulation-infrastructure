@@ -11,7 +11,7 @@ echo "########################################################################"
 echo "# Attack executer for all scripts within 'attac-scripts'"
 echo "# `date`"
 echo "########################################################################"
-echo "#by Ing. Alexander Poschenreithner 2017"
+echo "# by Ing. Alexander Poschenreithner 2017"
 echo "########################################################################"
 echo 
 echo 
@@ -83,7 +83,8 @@ done
 echo "########################################################################"
 echo
 
-mv /tmp/attack.log attack.log
+# Move attack log to shared directory
+mv /tmp/attack.log /vagrant_data/attack.log
 
 echo -e "\e[5mAllright so weit!\e[0m All attacks have been executed! Don't forget to copy the pcap dump file from: ./logserver/share/  ;-)"
 echo "For detailed information see attack.log"
