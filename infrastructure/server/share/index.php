@@ -11,7 +11,7 @@ $login_failed = false;
 $logged_in = false;
 $error_message = "";
 
-if (isset($_POST["logout"]) && $_POST["logout"] == "Abmelden") {
+if (isset($_POST["logout"]) && $_POST["logout"] == "LOGOUT") {
     //$_SESSION["logged_in"] = false;
 } else if (isset($_POST["login"]) && $_POST["login"] == "Login") {
     $sqlquery = 'SELECT * FROM users WHERE username = \'' . $_POST["username"] .
