@@ -5,6 +5,9 @@ Report page with hint on netcat listener on port 1234 and insecure fileupload.
 Ing. Alexander Poschenreithner
 */
 
+//ini_set('display_errors', 'On');
+//error_reporting(E_ALL);
+
 ?>
 
 <html>
@@ -27,12 +30,17 @@ if (isset($_FILES['file'])) {
 
     $uploaddir = '/vagrant_data/upload/';
     $uploadfile = $uploaddir . basename($_FILES['file']['name']);
-//echo '<pre>';
-//var_dump("From: " .$_FILES['file']['tmp_name'] . "    TO:" . $uploadfile);
-//var_dump("cp " . $_FILES['file']['tmp_name'] . ' ' . $uploadfile);
+/*echo '<pre>';
+var_dump("From: " .$_FILES['file']['tmp_name'] . "    TO:" . $uploadfile);
+var_dump("cp " . $_FILES['file']['tmp_name'] . ' ' . $uploadfile);
+var_dump($_FILES['file']['tmp_name']);
+var_dump();
+*/
+    move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile);
 
-    (shell_exec("cp " . $_FILES['file']['tmp_name'] . ' ' . $uploadfile));
-    shell_exec('chmod -R 777 /vagrant_data/upload/');
+
+   // (shell_exec("cp " . $_FILES['file']['tmp_name'] . ' ' . $uploadfile));
+    //shell_exec('chmod -R 777 /vagrant_data/upload/');
     /*
     if (rename($_FILES['file']['tmp_name'], $uploadfile)) {
     #if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
