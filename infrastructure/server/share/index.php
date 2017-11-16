@@ -47,17 +47,17 @@ if ($logged_in) {
     <body>
         <div class="" style="width: 320px;margin-left: auto; margin-right: auto;margin-top: 80px;">
             <h1 style="text-align: center;">
-                Scions Verlag
+                [SomeCompanyNameThatDoesntExist]
             </h1>
             <br/>
             <div style="text-align: justify">Welcome to [SomeCompanyNameThatDoesntExist]<br><br><b>The #1 choice of IT-Security!</b></div>
             <br/><br/><br/><br/>
 
             <form method="POST" action="index.php" id="login">
-                <label for="username">Mitarbeiter ID: </label>
+                <label for="username">Employee ID: </label>
                 <input name="username" id="username" type="text"/>
                 <br/><br/>
-                <label for="password">Passwort: </label>
+                <label for="password">Password: </label>
                 <input name="password" id="password" type="password"/>
                 <br/><br/>
                 <input class="loginbtn" type="submit" name="login" value="Login"
