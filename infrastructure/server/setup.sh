@@ -121,7 +121,7 @@ sudo su -c 'echo "dumper   ALL = NOPASSWD: ALL" >> /etc/sudoers'
 # Modify SSH/Telnet welcome message, otherwise it would print Vagrant...
 ##############################################################
 sudo sed -i '$ d' /etc/motd
-sudo su -c "echo 'Welcome to Scions high security server' >> /etc/motd"
+sudo su -c "echo 'Welcome to [SomeCompanyNameThatDoesntExist] high security server' >> /etc/motd"
 
 
 ##############################################################

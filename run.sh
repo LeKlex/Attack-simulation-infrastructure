@@ -8,3 +8,6 @@
 
 # Start logserver
 (cd infrastructure/logserver && vagrant up)
+
+# Start mainserver (will be attacked)
+(cd infrastructure/server && vagrant up)
