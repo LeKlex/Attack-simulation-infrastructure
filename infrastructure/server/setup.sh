@@ -25,8 +25,9 @@ sudo sed -i 's/\/var\/www/\/vagrant_data/g' /etc/apache2/sites-enabled/000-defau
 sudo chmod -R 777 /vagrant_data/*
 
 # The permission in the shared folder can not be changed, so we change the Apache2 user to vagrant
-sudo sed -i 's/\$\{APACHE\_RUN\_USER\}/vagrant' /etc/apache2/apache2.conf
-sudo sed -i 's/\$\{APACHE\_RUN\_GROUP\}/vagrant' /etc/apache2/apache2.conf
+# if not changed, files can not be uploaded via web
+sudo sed -i 's/${APACHE_RUN_USER}/vagrant/' /etc/apache2/apache2.conf
+sudo sed -i 's/${APACHE_RUN_GROUP}/vagrant/' /etc/apache2/apache2.conf
 
 sudo service apache2 restart
 
