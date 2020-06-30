@@ -1,6 +1,16 @@
 # Attack simulation infrastructure
 
-[TOC]
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [What is it?](#what-is-it)
+- [What is it for?](#what-is-it-for)
+- [Used software](#used-software)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [ToDos](#todos)
+- [Disclaimer](#disclaimer)
+
+<!-- /TOC -->
 
 ## What is it?
 
@@ -11,14 +21,14 @@ One VM is used as companies web appearance / intranet. The second one is its sys
 
 [IT IS JUST FOR EDUCATIONAL USE!](#disclaimer)
 
-I developed this small setup for some courses at the TU Wien (Technical University of Vienna). It is/was used to create networking dumps of several attacks for forensic student tasks - (and no, my dear colleagues and students, the tasks of this semester will not be avaiable here until the deadlines have passed :).
+I developed this small setup for some courses at the TU Wien (Technical University of Vienna). It is/was used to create networking dumps of several attacks for forensic student tasks.
 
 Anyhow, I think this project can show people 
 
 +  how attacks are performed
-+  how to finding vulnerabilities
++  how to find vulnerabilities
 +  how to detect them
-+  how to do some forensics
++  how to do some digital forensics
 +  and most important, how to protect yourself.
 
 
@@ -65,7 +75,7 @@ After all is done, you will find **attack.log** and **lanDump.pcap** in the proj
 +  revise Readme (add description of VMs, infrastructure and attacks)
 +  add attacks
 +  add screenshots & documentation
-
++  after 3 years... maybe port it to docker?! :)
 
 ## Disclaimer
 <a name="disclaimer"></a>
